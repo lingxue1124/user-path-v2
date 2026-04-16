@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户路径分析v2 - 桑基图集合</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1 { color: white; text-align: center; font-size: 2.5rem; margin-bottom: 10px; text-shadow: 2px 2px 4px rgba(0,0,0,0.2); }
+        .subtitle { color: rgba(255,255,255,0.9); text-align: center; font-size: 1.1rem; margin-bottom: 40px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 24px; }
+        .card {
+            background: white; border-radius: 16px; overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0,0,0,0.25); }
+        .card a { text-decoration: none; color: inherit; display: block; }
+        .card-img { width: 100%; height: 200px; object-fit: cover; background: #f0f0f0; }
+        .card-body { padding: 20px; }
+        .card-title { font-size: 1.25rem; font-weight: 600; color: #333; margin-bottom: 8px; }
+        .card-desc { color: #666; font-size: 0.9rem; line-height: 1.5; }
+        .card-arrow { display: inline-block; margin-top: 12px; color: #667eea; font-weight: 500; }
+        .footer { text-align: center; color: rgba(255,255,255,0.8); margin-top: 40px; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 用户路径分析 v2</h1>
+        <p class="subtitle">桑基图可视化数据集</p>
+        <div class="grid">
+            <div class="card">
+                <a href="sankey_chat_create.html" target="_blank">
+                    <img src="sankey_chat_create.png" alt="Chat Create" class="card-img">
+                    <div class="card-body">
+                        <div class="card-title">对话创建路径</div>
+                        <div class="card-desc">用户对话创建功能的使用路径和流转模式</div>
+                        <span class="card-arrow">查看图表 →</span>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="sankey_immerse_consume.html" target="_blank">
+                    <img src="sankey_immerse_consume.png" alt="Immerse Consume" class="card-img">
+                    <div class="card-body">
+                        <div class="card-title">沉浸消费路径</div>
+                        <div class="card-desc">用户在沉浸消费模式下的行为路径分析</div>
+                        <span class="card-arrow">查看图表 →</span>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="sankey_immerse_create.html" target="_blank">
+                    <img src="sankey_immerse_create.png" alt="Immerse Create" class="card-img">
+                    <div class="card-body">
+                        <div class="card-title">沉浸创建路径</div>
+                        <div class="card-desc">沉浸模式下用户创建内容的路径流转</div>
+                        <span class="card-arrow">查看图表 →</span>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="sankey_invalid_path.html" target="_blank">
+                    <img src="sankey_invalid_path.png" alt="Invalid Path" class="card-img">
+                    <div class="card-body">
+                        <div class="card-title">无效路径分析</div>
+                        <div class="card-desc">用户操作中的无效路径和流失点分析</div>
+                        <span class="card-arrow">查看图表 →</span>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="sankey_muse_create.html" target="_blank">
+                    <img src="sankey_muse_create.png" alt="Muse Create" class="card-img">
+                    <div class="card-body">
+                        <div class="card-title">灵感创建路径</div>
+                        <div class="card-desc">灵感功能中的用户流转和转化路径</div>
+                        <span class="card-arrow">查看图表 →</span>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="sankey_preview_browse.html" target="_blank">
+                    <img src="sankey_preview_browse.png" alt="Preview Browse" class="card-img">
+                    <div class="card-body">
+                        <div class="card-title">预览浏览路径</div>
+                        <div class="card-desc">预览和浏览功能中的用户路径流转</div>
+                        <span class="card-arrow">查看图表 →</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="footer"><p>Generated with ❤️ for User Path Analysis v2</p></div>
+    </div>
+</body>
+</html>
